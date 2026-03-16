@@ -99,36 +99,36 @@ export default function Hero() {
       
       {/* Center Image Space - Fixed Alignment */}
       <div 
-        className="absolute -bottom-[20vh] left-1/2 -translate-x-1/2 w-full max-w-2xl h-[105vh] z-0 pointer-events-none flex justify-center items-end mix-blend-luminosity"
+        className="absolute -bottom-[10vh] md:-bottom-[20vh] left-1/2 -translate-x-1/2 w-full max-w-2xl h-[90vh] md:h-[105vh] z-0 pointer-events-none flex justify-center items-end mix-blend-luminosity"
         style={{ maskImage: 'linear-gradient(to top, transparent 0%, black 20%, black 100%)', WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 20%, black 100%)' }}
       >
         <img 
           ref={imageRef}
           src="/myphoto1.png" 
           alt="Vijay Balaji" 
-          className="w-auto h-[85vh] mb-[20vh] object-cover object-top drop-shadow-2xl grayscale contrast-125 opacity-0"
+          className="w-auto h-[70vh] md:h-[85vh] mb-[15vh] md:mb-[20vh] object-cover object-top drop-shadow-2xl grayscale contrast-125 opacity-0"
           referrerPolicy="no-referrer"
         />
       </div>
 
-      <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-end px-[5vw] mt-auto mb-[50vh] w-full gap-8">
+      <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-end px-[5vw] mt-auto mb-[25vh] md:mb-[50vh] w-full gap-8">
         
         {/* Located Badge */}
-        <div ref={badgeRef} className="bg-text/10 backdrop-blur-md border border-text/10 text-text rounded-full flex items-center gap-4 pl-6 pr-2 py-2 w-max shadow-2xl transition-transform hover:scale-105 duration-300 opacity-0">
-          <p className="text-sm font-medium leading-tight">
+        <div ref={badgeRef} className="bg-text/10 backdrop-blur-md border border-text/10 text-text rounded-full flex items-center gap-3 md:gap-4 pl-4 md:pl-6 pr-1.5 md:pr-2 py-1.5 md:py-2 w-max shadow-2xl transition-transform hover:scale-105 duration-300 opacity-0">
+          <p className="text-xs md:text-sm font-medium leading-tight">
             Located<br/>in Bengaluru,<br/>India
           </p>
-          <div className="bg-primary rounded-full p-3 text-bg flex items-center justify-center transition-colors duration-700">
-            <Globe size={24} strokeWidth={1.5} />
+          <div className="bg-primary rounded-full p-2 md:p-3 text-bg flex items-center justify-center transition-colors duration-700">
+            <Globe size={20} className="md:w-6 md:h-6" strokeWidth={1.5} />
           </div>
         </div>
 
         {/* Right Text */}
-        <div ref={rightTextRef} className="flex flex-col items-start gap-4 text-text opacity-0">
-          <div className="p-3 bg-text/10 backdrop-blur-md rounded-full border border-text/10">
-            <ArrowDownRight size={24} strokeWidth={2} className="text-primary transition-colors duration-700" />
+        <div ref={rightTextRef} className="flex flex-col items-start gap-3 md:gap-4 text-text opacity-0">
+          <div className="p-2 md:p-3 bg-text/10 backdrop-blur-md rounded-full border border-text/10">
+            <ArrowDownRight size={20} className="md:w-6 md:h-6" strokeWidth={2} />
           </div>
-          <h2 className="text-3xl md:text-5xl font-light leading-tight tracking-tight drop-shadow-lg">
+          <h2 className="text-2xl md:text-5xl font-light leading-tight tracking-tight drop-shadow-lg">
             Gen AI Engineer<br/>& LLM Specialist
           </h2>
         </div>
@@ -136,9 +136,9 @@ export default function Hero() {
 
       {/* Massive Moving Text */}
       <div className="absolute bottom-0 left-0 w-[200vw] z-20 pointer-events-none">
-        <div ref={textRef} className="flex whitespace-nowrap text-[22vw] md:text-[18vw] text-text/90 font-medium tracking-tighter leading-[1.1] m-0 drop-shadow-2xl mix-blend-overlay pb-[2vh] opacity-0">
-          <span className="pr-16">Vijay Balaji — Gen AI</span>
-          <span className="pr-16">Vijay Balaji — Gen AI</span>
+        <div ref={textRef} className="flex whitespace-nowrap text-[25vw] md:text-[18vw] text-text/90 font-medium tracking-tighter leading-[1.1] m-0 drop-shadow-2xl mix-blend-overlay pb-[2vh] opacity-0">
+          <span className="pr-8 md:pr-16">Vijay Balaji — Gen AI</span>
+          <span className="pr-8 md:pr-16">Vijay Balaji — Gen AI</span>
         </div>
       </div>
     </section>

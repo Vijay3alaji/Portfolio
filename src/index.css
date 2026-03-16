@@ -62,10 +62,11 @@
 @layer base {
   body {
     @apply bg-bg text-text font-sans antialiased transition-colors duration-700;
-    cursor: none;
   }
-  
-  a, button {
+}
+
+@media (pointer: fine) {
+  body, a, button {
     cursor: none;
   }
 }

@@ -139,7 +139,7 @@ export default function Work() {
         {/* Floating Image */}
         <div
           ref={imageRef}
-          className="fixed top-0 left-0 w-[400px] h-[300px] pointer-events-none z-40 overflow-hidden rounded-xl scale-0 opacity-0 shadow-2xl"
+          className="hidden md:block fixed top-0 left-0 w-[400px] h-[300px] pointer-events-none z-40 overflow-hidden rounded-xl scale-0 opacity-0 shadow-2xl"
         >
           <div
             className="w-full h-full transition-transform duration-500 ease-[cubic-bezier(0.7,0,0.3,1)]"
