@@ -358,4 +358,4 @@ Have questions or found a bug?
 
 **Built with ❤️ by Vijay Balaji**
 
-Last updated: March 2025 | v1.0.0
+Last updated: March 2026 | v1.0.0
