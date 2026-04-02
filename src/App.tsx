@@ -13,6 +13,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import AboutPage from './pages/AboutPage';
 import ExpertisePage from './pages/ExpertisePage';
+import CertificationsPage from './pages/CertificationsPage';
 import ScrollToTop from './components/ScrollToTop';
 import BackToTopButton from './components/BackToTopButton';
 import { ThemeProvider } from './context/ThemeContext';
@@ -33,6 +34,7 @@ function AnimatedRoutes() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/expertise" element={<ExpertisePage />} />
+          <Route path="/certifications" element={<CertificationsPage />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </motion.div>

@@ -116,17 +116,25 @@ export default function AboutPage() {
                 </p>
               </div>
               
-              <div className="hero-element mt-16">
+              <div className="hero-element mt-16 flex flex-col sm:flex-row gap-6">
                 <a 
                   href="/updated_resume.pdf" 
                   download="Vijay_Balaji_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-4 rounded-full border border-bg/20 px-8 py-4 text-bg hover:bg-bg hover:text-text transition-all duration-300"
+                  className="inline-flex items-center justify-center gap-4 rounded-full border border-bg/20 px-8 py-4 text-bg hover:bg-bg hover:text-text transition-all duration-300"
                 >
                   <Download size={20} />
                   <span>Download Resume</span>
                 </a>
+                
+                <Link 
+                  to="/certifications"
+                  className="inline-flex items-center justify-center gap-4 rounded-full bg-bg px-8 py-4 text-text hover:scale-105 transition-transform duration-300 shadow-xl"
+                >
+                  <span>View Certifications</span>
+                  <ArrowRight size={20} />
+                </Link>
               </div>
             </div>
             
